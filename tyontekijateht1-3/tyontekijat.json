@@ -1,0 +1,48 @@
+{
+    "tyontekijat": [
+        {
+            "firstName": "Mauno",
+            "lastName": "Ahonen",
+            "osoite": "Talokuja 2",
+            "puhnumerot": [
+                {
+                    "oma": "1234567890",
+                    "tyo": "9876543210"
+                }
+            ]
+        },
+        {
+            "firstName": "Matti",
+            "lastName": "Näsä",
+            "osoite": "Pienitie 1",
+            "puhnumerot": [
+                {
+                    "oma": "1234534534",
+                    "tyo": "9234752725"
+                }
+            ]
+        },
+        {
+            "firstName": "Raimo",
+            "lastName": "Vormisto",
+            "osoite": "Pallonkuja 27",
+            "puhnumerot": [
+                {
+                    "oma": "",
+                    "tyo": ""
+                }
+            ]
+        },
+        {
+            "firstName": "Timo",
+            "lastName": "Silakka",
+            "osoite": "Suuritie 20",
+            "puhnumerot": [
+                {
+                    "oma": "1293489054",
+                    "tyo": ""
+                }
+            ]
+        }
+    ]
+}
