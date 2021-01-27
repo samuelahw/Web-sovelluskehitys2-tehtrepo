@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>JSON-kokeiluja....</title>
+    <title>JSON-kokeiluja...</title>
 </head>
 
 <body>
@@ -11,24 +11,24 @@
     <script>
 
         var xmlhttp = new XMLHttpRequest();
-        var url = "http://localhost:3001/tyontekijat"; // 2
+        var url = "http://localhost:3001/tyontekijat";
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var myArr = JSON.parse(xmlhttp.responseText);
                 console.log(myArr)
-                myFunction(myArr); // 3
+                myFunction(myArr);
             }
         }
-        xmlhttp.open("GET", url, true); // 4
+        xmlhttp.open("GET", url, true);
         xmlhttp.send();
-        function myFunction(arr) { // 5
+        function myFunction(arr) {
             var out = "";
             var i;
             for (i = 0; i < arr.length; i++) {
                 out += "<li>" + arr[i].firstName + " " +
                     arr[i].lastName + " - Osoite: " + arr[i].osoite + " - Oma puhelin: " + arr[i].puhnumerot[0].oma + " - Työ puhelin: " + arr[i].puhnumerot[0].tyo + "</li>";
             }
-            document.getElementById("duunarit").innerHTML = out; // 6
+            document.getElementById("duunarit").innerHTML = out;
         }
     </script>
 
