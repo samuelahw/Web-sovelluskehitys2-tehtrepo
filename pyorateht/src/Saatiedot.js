@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+require('dotenv').config();
+
 
 const Saatiedot = () => {
     const [saa, setSaa] = useState([]);
     const [iconUrl, setUrl] = useState('');
     const alkuTilanne = !saa || (saa && saa.length === 0);
+    const api_key = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     console.log('effect')
     axios
-        .get('https://api.openweathermap.org/data/2.5/forecast?q=Helsinki&lang=fi&units=metric&appid=ff8cf15cf535d5d4d85a7dcf349a6e55')
+        .get('https://api.openweathermap.org/data/2.5/forecast?q=Helsinki&lang=fi&units=metric&appid='+api_key)
         .then(response => {
             console.log('promise fulfilled')
             console.log(response.data)
