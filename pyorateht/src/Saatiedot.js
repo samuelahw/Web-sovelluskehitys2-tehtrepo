@@ -8,6 +8,7 @@ const Saatiedot = () => {
     const [iconUrl, setUrl] = useState('');
     const alkuTilanne = !saa || (saa && saa.length === 0);
     const api_key = process.env.REACT_APP_API_KEY;
+    console.log(api_key)
 
   useEffect(() => {
     console.log('effect')
